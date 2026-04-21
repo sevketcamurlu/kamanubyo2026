@@ -362,3 +362,82 @@ footer { padding: 40px 8%; text-align: center; border-top: 1px solid rgba(255,25
 .styled-table td.free {
     color: #10b981; /* Ücretsiz yazısını havalı bir yeşil yapar */
 }
+
+/* =========================================
+   📱 MOBİL UYUM (RESPONSIVE) AYARLARI
+   ========================================= */
+
+@media screen and (max-width: 768px) {
+    /* 1. Menü (Navbar) Düzenlemesi */
+    .navbar {
+        flex-direction: column;
+        padding: 15px;
+    }
+    .nav-links {
+        flex-direction: column;
+        gap: 15px;
+        padding-top: 15px;
+        text-align: center;
+        width: 100%;
+    }
+    .nav-links li {
+        width: 100%;
+    }
+    .nav-links a {
+        display: block;
+        padding: 10px;
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 8px;
+    }
+
+    /* 2. Ana Başlık (Hero) Düzenlemesi */
+    .hero {
+        padding: 40px 20px;
+    }
+    .hero h1 {
+        font-size: 2.2rem; /* Başlığı telefona göre küçülttük */
+        line-height: 1.2;
+    }
+    .hero-content p {
+        font-size: 1rem;
+    }
+    .hero-buttons {
+        flex-direction: column; /* Butonları alt alta aldık */
+        gap: 15px;
+        width: 100%;
+    }
+    .hero-buttons a {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* 3. Tüm Kutulu Tasarımları (Grid) Tek Sütuna Düşürme */
+    .grid-container, 
+    .news-grid, 
+    .testimonial-grid {
+        grid-template-columns: 1fr; /* Yanyana olanları alt alta dizer */
+        padding: 20px;
+        gap: 20px;
+    }
+
+    /* 4. Duyurular / Haberler Kartı Düzeni */
+    .news-item {
+        flex-direction: column; /* Tarih ve yazıyı alt alta al */
+        text-align: center;
+    }
+    .news-date {
+        margin-right: 0 !important;
+        margin-bottom: 15px;
+        width: 100%;
+    }
+
+    /* 5. Footer (En Alt Kısım) */
+    .footer-content {
+        padding: 20px;
+        text-align: center;
+    }
+    .footer-content div[style*="display: flex"] {
+        flex-direction: column !important; /* Alt linkleri alt alta yap */
+        gap: 10px !important;
+    }
+}
