@@ -456,7 +456,16 @@ footer { padding: 40px 8%; text-align: center; border-top: 1px solid rgba(255,25
     }
 
     /* Mobilde butonların birbirini ezmesini engelleme */
+   /* Mobilde butonların üst üste binmesini kesin olarak çözen kod */
+@media screen and (max-width: 768px) {
     .btn-glow, .btn-outline {
-        margin-bottom: 10px;
+        display: block !important;
+        width: 100% !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        margin-bottom: 15px !important;
+        box-sizing: border-box;
+        text-align: center;
     }
+}
 }
