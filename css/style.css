@@ -1,4 +1,4 @@
-﻿/* Google Fonts */
+/* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;900&display=swap');
 
 /* Değişkenler */
@@ -455,9 +455,7 @@ footer { padding: 40px 8%; text-align: center; border-top: 1px solid rgba(255,25
         padding-top: 140px !important;
     }
 
-    /* Mobilde butonların birbirini ezmesini engelleme */
-   /* Mobilde butonların üst üste binmesini kesin olarak çözen kod */
-@media screen and (max-width: 768px) {
+    /* Mobilde butonların üst üste binmesini kesin olarak çözen kod */
     .btn-glow, .btn-outline {
         display: block !important;
         width: 100% !important;
@@ -467,7 +465,6 @@ footer { padding: 40px 8%; text-align: center; border-top: 1px solid rgba(255,25
         box-sizing: border-box;
         text-align: center;
     }
-}
 }
 /* 🚀 SAYFA GEÇİŞ EFEKTİ (SMOOTH TRANSITION) */
 body {
@@ -508,7 +505,8 @@ html { scroll-behavior: smooth; }
 .slide img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Resmi sığdır */
+    object-fit: contain; /* Görselin KESİLMEDEN tamamının gösterilmesini sağlar */
+    object-position: center; /* Görseli tam merkeze oturtur */
 }
 
 /* 🚀 Resmin üzerindeki Koyu Katman (Overlay) - Sabit Kalsın */
