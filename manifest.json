@@ -1,0 +1,16 @@
+{
+  "name": "Kaman UBYO Dijital Portal",
+  "short_name": "kamanubyo2026",
+  "description": "Kırşehir Kaman UBYO öğrencileri için barınma, ulaşım ve akademik rehber.",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#6366f1",
+  "icons": [
+    {
+      "src": "img/logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
