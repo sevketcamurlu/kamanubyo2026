@@ -450,4 +450,13 @@ footer { padding: 40px 8%; text-align: center; border-top: 1px solid rgba(255,25
         flex-direction: column !important; /* Alt linkleri alt alta yap */
         gap: 10px !important;
     }
+    /* Mobilde Header'ın yazıları yutmasını engelleme */
+    main {
+        padding-top: 140px !important;
+    }
+
+    /* Mobilde butonların birbirini ezmesini engelleme */
+    .btn-glow, .btn-outline {
+        margin-bottom: 10px;
+    }
 }
