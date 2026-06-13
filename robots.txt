@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
 Sitemap: https://kamanubyo2026.info/sitemap.xml
